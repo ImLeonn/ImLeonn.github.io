@@ -1,0 +1,248 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header{
+    position: relative;
+    height: 700px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#circle{
+    position: relative;
+}
+
+.yellow-circle{
+    position: absolute;
+    margin-left: 951px;
+    z-index: 1;
+
+}
+
+.letters-in-circle{
+    position: absolute;
+    margin-left: 894px;
+    mix-blend-mode: overlay;
+    z-index: 2;
+}
+
+.queen-piece{
+    position: absolute;
+    width: 113.16px;
+    height: 252.44px;
+    top: 174px;
+    left: 1362px;
+    border: 0.26px 0px 0px 0px;
+    z-index: 3;
+}
+
+.king-piece{
+    position: absolute;
+    width: 103.78px;
+    height: 255.89px;
+    top: 284.19px;
+    left: 1027px;
+    z-index: 3;
+}
+
+.city{
+    position: absolute;
+    width: 1623.5px;
+    height: 452.5px;
+    top: 270px;
+    left: 161.5px;
+    z-index: 7;
+}
+
+.city-border{
+    position: absolute;
+    width: 1603.71px;
+    height: 463.82px;
+    top: 248px;
+    left: 157.5px;
+    z-index: 7;
+    overflow: hidden;
+}
+
+.background-header-color{
+    position: absolute;
+    mix-blend-mode: color-burn;
+    transform: rotate(90deg); 
+    z-index: 5;
+    top: -1900px; 
+    left: -840px;
+}
+
+.background-header{
+    position: absolute;
+    mix-blend-mode: color-burn;
+    z-index: 8;
+}
+
+.pawn-piece{
+    position: absolute;
+    width: 82.61px;
+    height: 122.22px;
+    top: 558.2px;
+    left: 1516.83px;
+    z-index: 9;
+}
+
+.knight-piece{
+    position: absolute;
+    width: 153.87px;
+    height: 243.99px;
+    top: 490px;
+    left: 1113.64px;
+    z-index: 9;
+}
+
+.logo{
+    position: absolute;
+    width: 245.17px;
+    height: 36px;
+    top: 26px;
+    left: 348.5px;
+    z-index: 9;
+}
+
+.header-text{
+    position: absolute;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 542px;
+    height: 444px;
+    top: 124px;
+    left: 348.5px;
+    color: #313131;
+    z-index: 9;
+}
+
+.headline{
+    width: 542px;
+    height: 264px;
+    font-size: 60px;
+    line-height: 66px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.headline-middle{
+    text-align: center;
+}
+
+.headline-bottom{
+    text-align: right;
+}
+
+p{
+    margin: 0px;
+}
+
+.sub-headline{
+    font-family: "Golos Text", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.header-buttons{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 542px;
+    height: 72px;
+}
+
+.header-button-left, .header-button-right{
+    width: 263px;
+    height: 72px;
+    border-radius: 66px;
+    border: 2px solid #1F1F1F;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-button-left{
+    color: #FFFFFF;
+    background: #1F1F1F;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button-right{
+    color: #1F1F1F;
+    background: transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-button-left:hover{
+    color: #1F1F1F;
+    background: #FBCE51;
+}
+
+.header-button-right:hover{
+    color: #FFFFFF;
+    background: #1F1F1F;
+}
+
+.subline {
+    width: 100vw;
+    position: relative;
+    padding: 18px 0px 18px 0px;
+    background-color: #F54932;
+    white-space: nowrap;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+}
+  
+.text,
+.dot {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.text{
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.running-line {
+    overflow: hidden;
+    display: flex;
+
+}
+
+.running-line div{
+    animation: move-right-to-left linear 30s infinite;
+}
+
+@keyframes move-right-to-left {
+    from {
+        transform: translate3d(0, 0, 0);
+      }
+      to {
+        transform: translate3d(-100%, 0, 0);
+      }
+}
